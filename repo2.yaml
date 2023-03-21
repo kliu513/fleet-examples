@@ -1,0 +1,18 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: helm
+  namespace: clusters
+spec:
+  repo: https://github.com/kliu513/fleet-examples
+  paths:
+  - multi-cluster/helm
+  targets:
+  - name: ring0
+    clusterSelector:
+      matchLabels:
+        group: ring0
+  - name: ring1
+    clusterSelector:
+      matchLabels:
+        group: ring1
