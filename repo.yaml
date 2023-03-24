@@ -1,12 +1,12 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: simple
+  name: helm
   namespace: clusters
 spec:
   repo: https://github.com/kliu513/fleet-examples
   paths:
-  - simple
+  - multi-cluster/helm
   targets:
   - name: ring0
     clusterSelector:
