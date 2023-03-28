@@ -5,7 +5,7 @@ targetCustomizations:
     values:
       replicas: 3
       image:
-        tag: v2
+        tag: v1
   clusterSelector:
     matchLabels:
       group: ring0
@@ -15,7 +15,7 @@ targetCustomizations:
       serviceType: LoadBalancer
       replicas: 1
       image:
-        tag: v2
+        tag: v1
   clusterSelector:
     matchLabels:
       group: ring1
