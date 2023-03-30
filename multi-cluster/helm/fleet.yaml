@@ -1,4 +1,4 @@
-namespace: fleet-mc-helm
+namespace: fleet-mc-helm-example
 targetCustomizations:
 - name: ring0
   helm:
