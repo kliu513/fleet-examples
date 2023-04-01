@@ -8,11 +8,7 @@ spec:
   paths:
   - multi-cluster/helm
   targets:
-  - name: ring0
+  - name: helm
     clusterSelector:
       matchLabels:
-        group: ring0
-  - name: ring1
-    clusterSelector:
-      matchLabels:
-        group: ring1
+        app: helm
