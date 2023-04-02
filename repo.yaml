@@ -8,7 +8,7 @@ spec:
   paths:
   - multi-cluster/helm
   targets:
-  - name: helm
+  - name: demo
     clusterSelector:
       matchLabels:
-        app: helm
+        app: demo
